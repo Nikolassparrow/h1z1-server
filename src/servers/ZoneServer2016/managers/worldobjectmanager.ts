@@ -1029,7 +1029,7 @@ export class WorldObjectManager {
           if (rewardChest) rewardChest.triggerRewards(server);
 
           const activeTimeout: { [spawnerId: number]: NodeJS.Timeout } = {};
-          
+
           if (activeTimeout[rewardChest.spawnerId]) {
             clearTimeout(activeTimeout[rewardChest.spawnerId]);
           }
